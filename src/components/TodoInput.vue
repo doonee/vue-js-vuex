@@ -37,10 +37,11 @@ export default {
   },
   methods: {
     addTodo() {
-      if (this.newTodoItem === "") {
+      if (this.newTodoItem === '') {
         this.showModal = true;
       } else {
-        this.$emit("addTodo", this.newTodoItem);
+        const str = this.newTodoItem.trim()
+        this.$store.commit("addTodo", str);
         this.clearInput();
       }
     },
