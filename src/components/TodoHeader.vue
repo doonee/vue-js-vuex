@@ -1,6 +1,6 @@
 <template>
   <header>
-      <h1>header</h1>
+      <h1>연습모듈</h1>
   </header>
 </template>
 
